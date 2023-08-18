@@ -94,6 +94,10 @@
 		2F2B8BA824A64DE600CEF088 /* InAppReceiptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B8B9C24A64DE600CEF088 /* InAppReceiptTests.swift */; };
 		2F2B8BA924A64DE600CEF088 /* PaymentsControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B8B9D24A64DE600CEF088 /* PaymentsControllerTests.swift */; };
 		2F2B8BAB24A64DE600CEF088 /* PaymentQueueSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B8B9F24A64DE600CEF088 /* PaymentQueueSpy.swift */; };
+		59D059E52A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D059E42A8FB219005A3E1B /* ThreadSafeDictionary.swift */; };
+		59D059E62A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D059E42A8FB219005A3E1B /* ThreadSafeDictionary.swift */; };
+		59D059E72A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D059E42A8FB219005A3E1B /* ThreadSafeDictionary.swift */; };
+		59D059E82A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D059E42A8FB219005A3E1B /* ThreadSafeDictionary.swift */; };
 		654287F61E79F5A000F61800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654287F41E79F5A000F61800 /* Main.storyboard */; };
 		654287F81E79F5A000F61800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654287F71E79F5A000F61800 /* Assets.xcassets */; };
 		654287FD1E79F75000F61800 /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C0D52C1CF7404500F90BCE /* SwiftyStoreKit.framework */; };
@@ -229,6 +233,7 @@
 		2F2B8B9E24A64DE600CEF088 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Tests.plist"; path = "Tests/SwiftyStoreKitTests/Info-Tests.plist"; sourceTree = SOURCE_ROOT; };
 		2F2B8B9F24A64DE600CEF088 /* PaymentQueueSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentQueueSpy.swift; path = Tests/SwiftyStoreKitTests/PaymentQueueSpy.swift; sourceTree = SOURCE_ROOT; };
 		54C0D52C1CF7404500F90BCE /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D059E42A8FB219005A3E1B /* ThreadSafeDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreadSafeDictionary.swift; path = Sources/SwiftyStoreKit/ThreadSafeDictionary.swift; sourceTree = SOURCE_ROOT; };
 		6502F5FE1B985833004E342D /* SwiftyStoreKit_iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyStoreKit_iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6502F62D1B985C40004E342D /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654287EE1E79F5A000F61800 /* SwiftyStoreKit_tvOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyStoreKit_tvOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -347,6 +352,7 @@
 		6502F6001B985833004E342D /* SwiftyStoreKit */ = {
 			isa = PBXGroup;
 			children = (
+				59D059E42A8FB219005A3E1B /* ThreadSafeDictionary.swift */,
 				2F2B8B2224A64CC000CEF088 /* AppleReceiptValidator.swift */,
 				2F2B8B2624A64CC000CEF088 /* CompleteTransactionsController.swift */,
 				2F2B8B2324A64CC000CEF088 /* InAppProductQueryRequest.swift */,
@@ -828,6 +834,7 @@
 			files = (
 				2F2B8B3A24A64CC100CEF088 /* InAppProductQueryRequest.swift in Sources */,
 				2F2B8B6224A64CC100CEF088 /* PaymentsController.swift in Sources */,
+				59D059E72A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */,
 				2F2B8B5624A64CC100CEF088 /* SKProduct+LocalizedPrice.swift in Sources */,
 				2F2B8B3E24A64CC100CEF088 /* InAppReceipt.swift in Sources */,
 				2F2B8B3624A64CC100CEF088 /* AppleReceiptValidator.swift in Sources */,
@@ -860,6 +867,7 @@
 			files = (
 				2F2B8B3824A64CC100CEF088 /* InAppProductQueryRequest.swift in Sources */,
 				2F2B8B6024A64CC100CEF088 /* PaymentsController.swift in Sources */,
+				59D059E52A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */,
 				2F2B8B5424A64CC100CEF088 /* SKProduct+LocalizedPrice.swift in Sources */,
 				2F2B8B3C24A64CC100CEF088 /* InAppReceipt.swift in Sources */,
 				2F2B8B3424A64CC100CEF088 /* AppleReceiptValidator.swift in Sources */,
@@ -910,6 +918,7 @@
 			files = (
 				2F2B8B3B24A64CC100CEF088 /* InAppProductQueryRequest.swift in Sources */,
 				2F2B8B6324A64CC100CEF088 /* PaymentsController.swift in Sources */,
+				59D059E82A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */,
 				2F2B8B5724A64CC100CEF088 /* SKProduct+LocalizedPrice.swift in Sources */,
 				2F2B8B3F24A64CC100CEF088 /* InAppReceipt.swift in Sources */,
 				2F2B8B3724A64CC100CEF088 /* AppleReceiptValidator.swift in Sources */,
@@ -932,6 +941,7 @@
 			files = (
 				2F2B8B3924A64CC100CEF088 /* InAppProductQueryRequest.swift in Sources */,
 				2F2B8B6124A64CC100CEF088 /* PaymentsController.swift in Sources */,
+				59D059E62A8FB219005A3E1B /* ThreadSafeDictionary.swift in Sources */,
 				2F2B8B5524A64CC100CEF088 /* SKProduct+LocalizedPrice.swift in Sources */,
 				2F2B8B3D24A64CC100CEF088 /* InAppReceipt.swift in Sources */,
 				2F2B8B3524A64CC100CEF088 /* AppleReceiptValidator.swift in Sources */,

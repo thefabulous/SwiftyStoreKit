@@ -49,7 +49,7 @@ class ProductsInfoController: NSObject {
     }
     
     // As we can have multiple inflight requests, we store them in a dictionary by product ids
-    private var inflightRequests: [Set<String>: InAppProductQuery] = [:]
+    private var inflightRequests = ThreadSafeDictionary<Set<String>, InAppProductQuery>()
 
     @discardableResult
     func retrieveProductsInfo(_ productIds: Set<String>, completion: @escaping (RetrieveResults) -> Void) -> InAppProductRequest {
